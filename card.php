@@ -6,9 +6,9 @@ function cardTemplate($productID, $productName, $productPrice, $description)
 {
     ?>
     <link rel="stylesheet" href="css/custom.css"/>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-3">
             <div class="card h-100">
-                <img class="card-img-top h-50" src="images/no-image.jpg" alt="Card image cap">
+                <img class="card-img-top" src="images/no-image.jpg" alt="Card image cap">
                 <div class="card-body">
                     <div class="card-title">
                         <h5><?php echo $productName ?></h5>
@@ -16,7 +16,7 @@ function cardTemplate($productID, $productName, $productPrice, $description)
                     <div class="card-text">
                         <?php echo $description; ?>
                     </div>
-                    <div class="card-text text-danger">
+                    <div class="card-text text-danger align-bottom">
                         <?php echo "€ " . $productPrice; ?>
                     </div>
                 </div>

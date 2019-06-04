@@ -23,7 +23,7 @@
 <?php include __DIR__ . '/card.php' ?>
 <div class="d-flex">
         <?php
-        $stmt = sqlselect("SELECT ProductID, ProductName, ProductShortDesc, ProductPrice FROM products ORDER BY RAND() LIMIT 3", array());
+        $stmt = sqlselect("SELECT ProductID, ProductName, ProductShortDesc, ProductPrice FROM products ORDER BY RAND() LIMIT 4", array());
         foreach ($stmt as $v) {
             ?>
             <?php
