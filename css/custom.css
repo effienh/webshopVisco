@@ -1,0 +1,38 @@
+.carousel-item img {
+    display: block;
+    margin: auto;
+    height: 200px;
+    width: 300px;
+}
+
+.carousel {
+    margin: auto;
+    width: 300px;
+}
+.abs-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar{
+    margin-bottom: 20px;
+}
+
+.carousel-inner {
+    border-radius: 25px;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+}
+
+.card{
+    border-radius: 25px;
+    margin: 25px;
+}
+
+.card-img-top{
+    border-radius: 25px;
+}
+
+
+
