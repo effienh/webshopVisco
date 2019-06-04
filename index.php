@@ -21,15 +21,16 @@
 <div><?php include __DIR__ . '/navbar.php' ?></div>
 <div><?php include __DIR__ . '/carousel.php' ?></div>
 <?php include __DIR__ . '/card.php' ?>
-<div class="d-flex">
-        <?php
-        $stmt = sqlselect("SELECT ProductID, ProductName, ProductShortDesc, ProductPrice FROM products ORDER BY RAND() LIMIT 4", array());
-        foreach ($stmt as $v) {
-            ?>
+        <div class="d-flex">
             <?php
-            cardTemplate($v['ProductID'], $v['ProductName'], $v['ProductPrice'], $v['ProductShortDesc']);
-        }
-        ?>
-    </div>
+            $stmt = sqlselect("SELECT ProductID, ProductName, ProductShortDesc, ProductPrice FROM products ORDER BY RAND() LIMIT 4", array());
+            foreach ($stmt as $v) {
+                ?>
+                <?php
+                cardTemplate($v['ProductID'], $v['ProductName'], $v['ProductPrice'], $v['ProductShortDesc']);
+            }
+            ?>
+        </div>
+<div><?php include __DIR__ . '/footer.php' ?></div>
 </body>
 </html>
